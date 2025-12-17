@@ -138,3 +138,34 @@ ditj my-container-name
 ```bash
 dup my-profile
 ```
+
+
+---
+
+## 🧠 About This Project
+
+**Made with ❤️ for DevOps Engineers** 
+
+Powered by **DevOps In Action**, this repository offers **real-world, hands-on DevOps setups** for CI/CD pipelines, containerization, Kubernetes, cloud platforms (AWS, GCP, Azure), and infrastructure at scale.
+
+## 📝 License
+
+This guide is provided as-is for educational and professional use.
+
+## 🤝 Contributing
+
+Feel free to suggest improvements or report issues.
+
+
+### 💼 Connect with Me 👇😊
+
+*   🔥 [**YouTube**](https://www.youtube.com/@DevOpsinAction?sub_confirmation=1)
+*   ✍️ [**Blog**](https://ibraransari.blogspot.com/)
+*   💼 [**LinkedIn**](https://www.linkedin.com/in/ansariibrar/)
+*   👨‍💻 [**GitHub**](https://github.com/meibraransari?tab=repositories)
+*   💬 [**Telegram**](https://t.me/DevOpsinActionTelegram)
+*   🐳 [**Docker Hub**](https://hub.docker.com/u/ibraransaridocker)
+
+### ⭐ If You Found This Helpful...
+
+***Please star the repo and share it! Thanks a lot!*** 🌟
