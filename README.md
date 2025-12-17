@@ -57,12 +57,12 @@ You can install the commands using one of the following methods:
 
 **Using wget:**
 ```bash
-sudo bash <(wget -qO- https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh) install
+bash <(wget -qO- https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh)
 ```
 
 **Using curl:**
 ```bash
-sudo bash <(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh) install
+bash <(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh)
 ```
 
 ### Method 2: Download First (Works on Windows/Git Bash)
@@ -117,14 +117,15 @@ sudo ./docker_short_command.sh uninstall
 
 ## 🛠️ Usage Examples
 
-**Check Health of Containers:**
+**Docker Short Command Help:**
 ```bash
-dhc
+dhp
 ```
 
 **Enter a container's shell:**
 ```bash
 dec my-container-name
+decx my-container-name
 ```
 
 **View JSON configuration of a container:**
