@@ -209,7 +209,7 @@ show_menu() {
         2) uninstall_commands ;;
         3) update_script ;;
         4) usage ;;
-        5) exit 0 ;;
+        x) exit 0 ;;
         *) echo -e "${RED}Invalid option${NC}"; exit 1 ;;
     esac
 }
