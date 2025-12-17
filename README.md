@@ -55,19 +55,19 @@ You can install the commands directly using `curl` or `wget`.
 
 **Using wget:**
 ```bash
-sudo bash <(wget -qO- https://raw.githubusercontent.com/meibraransari/docker-short-command/main/docker_short_command.sh) install
+sudo bash <(wget -qO- https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh) install
 ```
 
 **Using curl:**
 ```bash
-sudo bash <(curl -s https://raw.githubusercontent.com/meibraransari/docker-short-command/main/docker_short_command.sh) install
+sudo bash <(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh) install
 ```
 
 *Note: Running the script without arguments will open an interactive menu where you can choose to Install, Uninstall, Help, or Update.*
 
 *To install non-interactively (e.g., in scripts), pass the `install` argument:*
 ```bash
-sudo bash <(curl -s https://raw.githubusercontent.com/meibraransari/docker-short-command/main/docker_short_command.sh) install
+sudo bash <(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh) install
 ```
 
 ## 🔄 Update
