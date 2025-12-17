@@ -84,12 +84,12 @@ usage() {
     echo "  help       Show this help message"
 }
 
-# check_root() {
-#     if [[ $EUID -ne 0 ]]; then
-#         echo -e "${RED}Error: This script must be run as root.${NC}"
-#         exit 1
-#     fi
-# }
+check_root() {
+    if [[ $EUID -ne 0 ]]; then
+        echo -e "${RED}Error: This script must be run as root.${NC}"
+        exit 1
+    fi
+}
 
 generate_help_command() {
     local help_file="$COMMAND_PATH/dhp"
@@ -111,7 +111,7 @@ EOF
 }
 
 install_commands() {
-    #check_root
+    check_root
     echo -e "${BLUE}Installing commands to $COMMAND_PATH...${NC}"
 
     # Generate individual commands
@@ -138,7 +138,7 @@ install_commands() {
 }
 
 uninstall_commands() {
-    #check_root
+    check_root
     echo -e "${BLUE}Uninstalling commands from $COMMAND_PATH...${NC}"
 
     for cmd_entry in "${COMMANDS[@]}"; do
@@ -159,7 +159,7 @@ uninstall_commands() {
 }
 
 update_script() {
-    #check_root
+    check_root
     echo -e "${BLUE}Updating script...${NC}"
     local temp_file="/tmp/$SCRIPT_NAME"
     
