@@ -51,7 +51,9 @@ A comprehensive collection of shortcut commands to simplify your Docker workflow
 
 ## 📥 Installation
 
-You can install the commands directly using `curl` or `wget`.
+You can install the commands using one of the following methods:
+
+### Method 1: Direct Install (Linux/WSL2/macOS)
 
 **Using wget:**
 ```bash
@@ -63,12 +65,33 @@ sudo bash <(wget -qO- https://raw.githubusercontent.com/meibraransari/Docker-Sho
 sudo bash <(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh) install
 ```
 
-*Note: Running the script without arguments will open an interactive menu where you can choose to Install, Uninstall, Help, or Update.*
+### Method 2: Download First (Works on Windows/Git Bash)
 
-*To install non-interactively (e.g., in scripts), pass the `install` argument:*
+If you encounter the error `bash: /proc/self/fd/11: No such file or directory`, use this method:
+
+**Using wget:**
 ```bash
-sudo bash <(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh) install
+wget https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh -O docker_short_command.sh
+sudo bash docker_short_command.sh install
 ```
+
+**Using curl:**
+```bash
+curl -fsSL https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh -o docker_short_command.sh
+sudo bash docker_short_command.sh install
+```
+
+### Method 3: Pipe to Bash (Alternative)
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh | sudo bash -s install
+```
+
+> [!NOTE]
+> **Windows Users:** Process substitution `<(...)` doesn't work in Git Bash on Windows. Use **Method 2** or **Method 3** instead.
+
+> [!TIP]
+> Running the script without arguments will open an interactive menu where you can choose to Install, Uninstall, Help, or Update.
 
 ## 🔄 Update
 
