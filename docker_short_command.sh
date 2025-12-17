@@ -203,7 +203,7 @@ show_menu() {
     echo -e "${YELLOW}4)${NC} Help"
     echo -e "${YELLOW}x)${NC} Exit"
     echo
-    read -p "Select an option [1-x]: " option
+    read -p "Select any option [1,2,3,4,x]: " option
     case $option in
         1) install_commands ;;
         2) uninstall_commands ;;
