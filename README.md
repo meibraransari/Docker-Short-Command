@@ -19,6 +19,7 @@ A comprehensive collection of shortcut commands to simplify your Docker workflow
 
 | Command | Description | Equivalent Docker Command / Function |
 |---------|-------------|--------------------------------------|
+| `dhp` | **Help** | **Lists all installed commands** |
 | `dpl` | Pull image | `docker pull` |
 | `dis` | List images | `docker images` |
 | `drn` | Run container | `docker run` |
@@ -47,7 +48,7 @@ A comprehensive collection of shortcut commands to simplify your Docker workflow
 | `drntest`| Run test container | `docker run -itd --name=test ...` |
 | `dup` | Compose Up | `docker compose up -d` (supports profiles) |
 | `ddown` | Compose Down | `docker compose down` (supports profiles) |
-| `dhp` | **Help** | **Lists all installed commands** |
+
 
 ## 📥 Installation
 
