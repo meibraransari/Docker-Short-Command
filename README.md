@@ -58,12 +58,12 @@ You can install the commands using one of the following methods:
 
 **Using wget:**
 ```bash
-bash <(wget -qO- https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh) | sudo bash -s install
+bash <(wget -qO- https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh)
 ```
 
 **Using curl:**
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh) | sudo bash -s install
+bash <(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Short-Command/main/docker_short_command.sh)
 ```
 
 ### Method 2: Download First (Works on Windows/Git Bash)
