@@ -68,7 +68,7 @@ bash <(curl -s https://raw.githubusercontent.com/meibraransari/Docker-Short-Comm
 
 ### Method 2: Download First (Works on Windows/Git Bash)
 
-If you encounter the error `bash: /proc/self/fd/11: No such file or directory`, use this method:
+If you encounter the error `bash: /proc/self/fd/xx: No such file or directory`, use this method:
 
 **Using wget:**
 ```bash
