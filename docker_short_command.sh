@@ -102,7 +102,14 @@ echo "----------------------"
 EOF
 
     for cmd_entry in "${COMMANDS[@]}"; do
-        IFS='|' read -r name desc type content <<< "$cmd_entry"
+        # Parse fields manually to handle potential multi-line content
+        local name="${cmd_entry%%|*}"
+        local remainder="${cmd_entry#*|}"
+        local desc="${remainder%%|*}"
+        # We don't strictly need type and content for help, but strictly following format
+        remainder="${remainder#*|}"
+        local type="${remainder%%|*}"
+        local content="${remainder#*|}"
         # Align output
         printf "echo \"%-10s = %s\"\n" "$name" "$desc" >> "$help_file"
     done
@@ -116,7 +123,13 @@ install_commands() {
 
     # Generate individual commands
     for cmd_entry in "${COMMANDS[@]}"; do
-        IFS='|' read -r name desc type content <<< "$cmd_entry"
+        # Parse fields manually to handle multi-line content (which read misses)
+        local name="${cmd_entry%%|*}"
+        local remainder="${cmd_entry#*|}"
+        local desc="${remainder%%|*}"
+        remainder="${remainder#*|}"
+        local type="${remainder%%|*}"
+        local content="${remainder#*|}"
         local file_path="$COMMAND_PATH/$name"
         
         echo "Creating $name..."
@@ -142,7 +155,10 @@ uninstall_commands() {
     echo -e "${BLUE}Uninstalling commands from $COMMAND_PATH...${NC}"
 
     for cmd_entry in "${COMMANDS[@]}"; do
-        IFS='|' read -r name desc type content <<< "$cmd_entry"
+        # Parse fields manually (only name is strictly needed here)
+        local name="${cmd_entry%%|*}"
+        # remainder="${cmd_entry#*|}" ... not needed for uninstall logic but consistent parsing
+
         local file_path="$COMMAND_PATH/$name"
         if [[ -f "$file_path" ]]; then
             echo "Removing $name"
